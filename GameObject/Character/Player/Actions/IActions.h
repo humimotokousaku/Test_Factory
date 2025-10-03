@@ -2,6 +2,7 @@
 #include "Action/IAction.h"
 #include "../../../../Componets/Math.h"
 #include <memory>
+#include <map>
 
 class IActions {
 public:
@@ -72,6 +73,9 @@ public:// アクセサ
 #pragma endregion
 
 protected:
+	// 行動処理をまとめたリスト
+	std::map<ActionType, std::unique_ptr<IAction>> actions_;
+
 	// 変更可能な状態マスク
 	unsigned int enableChangeState_ = 0;
 	// 並列不能な状態マスク

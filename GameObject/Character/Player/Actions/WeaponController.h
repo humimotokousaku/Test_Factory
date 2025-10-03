@@ -5,7 +5,7 @@
 #include <vector>
 
 /// <summary>
-/// メイン、サブ武器の使い分け
+/// メイン、サブ武器やリロード、ADS等の処理
 /// </summary>
 class WeaponController : public IActions {
 public:
@@ -35,13 +35,11 @@ private:
 	void InputHandle();
 
 private:
-	// 射撃とリロード
-	std::unique_ptr<IAction> mainAction_;
-	// メイン以外の並列して行える行動
-	std::unique_ptr<IAction> subAction_;
-
 	// キー入力結果を受け取る箱
 	char keys_[256] = { 0 };
 	char preKeys_[256] = { 0 };
+
+private:
+	// 弾リスト
 };
 

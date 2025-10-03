@@ -20,9 +20,6 @@
     <ClCompile Include="C:\KamataEngine\Adapter\Novice.cpp">
       <Filter>KamataEngine\Adapter</Filter>
     </ClCompile>
-    <ClCompile Include="GameObject\Weapon\IWeapon.cpp">
-      <Filter>KamataEngine</Filter>
-    </ClCompile>
     <ClCompile Include="GameObject\Character\Player\Player.cpp">
       <Filter>KamataEngine</Filter>
     </ClCompile>
@@ -60,6 +57,12 @@
       <Filter>KamataEngine</Filter>
     </ClCompile>
     <ClCompile Include="GameObject\Character\Player\Actions\Action\None\NoneAction.cpp">
+      <Filter>KamataEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject\Weapon\Gun\Components\Magazine.cpp">
+      <Filter>KamataEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject\Weapon\Gun\Gun.cpp">
       <Filter>KamataEngine</Filter>
     </ClCompile>
   </ItemGroup>
@@ -163,5 +166,7 @@
     <ClInclude Include="GameObject\Character\Player\Actions\Action\ADS\ADS.h" />
     <ClInclude Include="GameObject\Character\Player\Actions\Action\Reloading\Reloading.h" />
     <ClInclude Include="GameObject\Character\Player\Actions\Action\None\NoneAction.h" />
+    <ClInclude Include="GameObject\Weapon\Gun\Components\Magazine.h" />
+    <ClInclude Include="GameObject\Weapon\Gun\Gun.h" />
   </ItemGroup>
 </Project>

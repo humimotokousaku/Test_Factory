@@ -44,13 +44,10 @@ public:// アクセサ
 #pragma endregion
 
 private:
-	// 移動
-	std::unique_ptr<IAction> moveAction_;
-	// 移動以外の並列して行える行動
-	std::unique_ptr<IAction> subAction_;
-
 	// キー入力結果を受け取る箱
 	char keys_[256] = { 0 };
 	char preKeys_[256] = { 0 };
+
+private:
 };
 

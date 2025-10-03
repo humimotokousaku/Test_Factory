@@ -1,5 +1,28 @@
 #pragma once
 
+// 移動系統の状態の種類
+enum class MoveActionType {
+	kMove,
+	kJuup,
+	kEvasion,
+	kSliding,
+	kCount
+};
+// 武器の状態の種類
+enum class WeaponActionType {
+	kDefault,
+	kShot,
+	kReloading,
+	kADS,
+	kCount
+};
+
+enum class ActionType {
+	kMain,
+	kSub,
+	kCount
+};
+
 namespace ActionConfig {
 	namespace Mask {
 		// 移動状態

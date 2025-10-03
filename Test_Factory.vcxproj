@@ -111,8 +111,9 @@ xcopy C:\KamataEngine\DirectXGame\Resources "$(OutDirFullPath)NoviceResources" /
     <ClCompile Include="GameObject\Character\Player\Actions\Action\ADS\ADS.cpp" />
     <ClCompile Include="C:\KamataEngine\Adapter\Novice.cpp" />
     <ClCompile Include="GameObject\Character\Player\Actions\Action\Evasion\Evasion.cpp" />
-    <ClCompile Include="GameObject\Weapon\IWeapon.cpp" />
     <ClCompile Include="GameObject\Character\Player\Actions\Action\Jump\Jump.cpp" />
+    <ClCompile Include="GameObject\Weapon\Gun\Components\Magazine.cpp" />
+    <ClCompile Include="GameObject\Weapon\Gun\Gun.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="GameObject\Character\Player\Player.cpp" />
     <ClCompile Include="Componets\Math.cpp" />
@@ -171,6 +172,8 @@ xcopy C:\KamataEngine\DirectXGame\Resources "$(OutDirFullPath)NoviceResources" /
     <ClInclude Include="Componets\Timer.h" />
     <ClInclude Include="GameObject\Character\Player\Actions\Action\Reloading\Reloading.h" />
     <ClInclude Include="GameObject\Character\Player\Actions\Action\None\NoneAction.h" />
+    <ClInclude Include="GameObject\Weapon\Gun\Components\Magazine.h" />
+    <ClInclude Include="GameObject\Weapon\Gun\Gun.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
